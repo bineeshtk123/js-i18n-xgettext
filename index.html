@@ -3,10 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>JS i18n demo</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js"></script>
-    <script src="https://raw.github.com/SlexAxton/Jed/master/jed.js"></script>
-    <script src="js/main.js"></script>
+    <script src=""></script>
+    <script>
+        var require = {
+            baseUrl: "js/",
+            paths: {
+                jquery: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min",
+                handlebars: "https://raw.github.com/gist/1876516/handlebars",
+                jed: "https://raw.github.com/SlexAxton/Jed/master/jed",
+                domReady: "https://raw.github.com/requirejs/domReady/latest/domReady",
+                i18n: "https://raw.github.com/requirejs/i18n/latest/i18n.js"
+            }
+        };
+    </script>
+    <script data-main="main" src="js/require.js"></script>
   </head>
   <body>
     <div id="test-container"</div>
