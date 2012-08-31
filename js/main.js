@@ -1,16 +1,20 @@
 $(function () {
+
+    var locale_data = {
+        "messages" : {
+            "" : {
+                "domain" : "messages",
+                "lang"   : "nl",
+                "plural_forms" : "nplurals=2; plural=(n != 1);"
+            },
+            "Beer is" : [ null, "Bier is"]
+        }
+    };
+
+
     var i18n = new Jed({
       // Generally output by a .po file conversion
-      locale_data : {
-        "messages" : {
-          "" : {
-            "domain" : "messages",
-            "lang"   : "en",
-            "plural_forms" : "nplurals=2; plural=(n != 1);"
-          },
-          "Beer is" : [ null, "Beer is"]
-        }
-      },
+      locale_data : locale_data,
       "domain" : "messages"
     });
 
